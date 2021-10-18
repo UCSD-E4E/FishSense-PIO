@@ -14,50 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Interface:AD9951 U2
-U 1 1 6166350E
-P 4450 3650
-F 0 "U2" H 5594 3696 50  0000 L CNN
-F 1 "AD9951" H 5594 3605 50  0000 L CNN
-F 2 "Package_QFP:TQFP-48-1EP_7x7mm_P0.5mm_EP3.5x3.5mm" H 4450 2450 50  0001 C CIN
-F 3 "https://www.analog.com/static/imported-files/data_sheets/AD9951.pdf" H 4450 3650 50  0001 C CNN
-	1    4450 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:USB_C_Receptacle J8
-U 1 1 61664802
-P 9700 2150
-F 0 "J8" H 9807 3417 50  0000 C CNN
-F 1 "USB_C_Receptacle" H 9807 3326 50  0000 C CNN
-F 2 "Connector_USB:USB_C_Receptacle_GCT_USB4085" H 9850 2150 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 9850 2150 50  0001 C CNN
-	1    9700 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:USB_C_Receptacle J7
-U 1 1 61667CF7
-P 9650 5100
-F 0 "J7" H 9757 6367 50  0000 C CNN
-F 1 "USB_C_Receptacle" H 9757 6276 50  0000 C CNN
-F 2 "Connector_USB:USB_C_Receptacle_GCT_USB4085" H 9800 5100 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 9800 5100 50  0001 C CNN
-	1    9650 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:USB_C_Receptacle J6
-U 1 1 6166A7B3
-P 8400 5100
-F 0 "J6" H 8507 6367 50  0000 C CNN
-F 1 "USB_C_Receptacle" H 8507 6276 50  0000 C CNN
-F 2 "Connector_USB:USB_C_Receptacle_GCT_USB4085" H 8550 5100 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 8550 5100 50  0001 C CNN
-	1    8400 5100
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:LED D1
 U 1 1 6166E725
 P 7450 1300
@@ -126,23 +82,23 @@ $EndComp
 $Comp
 L New_Library:P783F-Q24-S5-S U1
 U 1 1 616833DA
-P 1850 4100
-F 0 "U1" H 2075 4225 50  0000 C CNN
-F 1 "P783F-Q24-S5-S" H 2075 4134 50  0000 C CNN
-F 2 "Converter_DCDC:Converter_DCDC_RECOM_R5xxxPA_THT" H 1850 4100 50  0001 C CNN
-F 3 "" H 1850 4100 50  0001 C CNN
-	1    1850 4100
+P 4750 6050
+F 0 "U1" H 4975 6175 50  0000 C CNN
+F 1 "P783F-Q24-S5-S" H 4975 6084 50  0000 C CNN
+F 2 "Converter_DCDC:Converter_DCDC_RECOM_R5xxxPA_THT" H 4750 6050 50  0001 C CNN
+F 3 "" H 4750 6050 50  0001 C CNN
+	1    4750 6050
 	1    0    0    -1  
 $EndComp
 $Comp
 L Relay:ADW11 K1
 U 1 1 6168A988
-P 2800 6200
-F 0 "K1" H 3230 6246 50  0000 L CNN
-F 1 "ADW11" H 3230 6155 50  0000 L CNN
-F 2 "Relay_THT:Relay_SPST_TE_PCN-1xxD3MHZ" H 4125 6150 50  0001 C CNN
-F 3 "https://www.panasonic-electric-works.com/pew/es/downloads/ds_dw_hl_en.pdf" H 2800 6200 50  0001 C CNN
-	1    2800 6200
+P 2250 6900
+F 0 "K1" H 2680 6946 50  0000 L CNN
+F 1 "ADW11" H 2680 6855 50  0000 L CNN
+F 2 "Relay_THT:Relay_SPST_TE_PCN-1xxD3MHZ" H 3575 6850 50  0001 C CNN
+F 3 "https://www.panasonic-electric-works.com/pew/es/downloads/ds_dw_hl_en.pdf" H 2250 6900 50  0001 C CNN
+	1    2250 6900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -159,12 +115,12 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J3
 U 1 1 616936C7
-P 3150 1900
-F 0 "J3" H 3230 1892 50  0000 L CNN
-F 1 "Conn_01x02" H 3230 1801 50  0000 L CNN
-F 2 "Connector_AMASS:AMASS_XT30U-F_1x02_P5.0mm_Vertical" H 3150 1900 50  0001 C CNN
-F 3 "~" H 3150 1900 50  0001 C CNN
-	1    3150 1900
+P 2950 1650
+F 0 "J3" H 3030 1642 50  0000 L CNN
+F 1 "Conn_01x02" H 3030 1551 50  0000 L CNN
+F 2 "Connector_AMASS:AMASS_XT30U-F_1x02_P5.0mm_Vertical" H 2950 1650 50  0001 C CNN
+F 3 "~" H 2950 1650 50  0001 C CNN
+	1    2950 1650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -231,6 +187,61 @@ F 1 "MountingHole_Pad" H 5950 2108 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.7mm_M2.5_Pad" H 5850 2150 50  0001 C CNN
 F 3 "~" H 5850 2150 50  0001 C CNN
 	1    5850 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB3_A J7
+U 1 1 616E2E2E
+P 9650 2550
+F 0 "J7" H 9707 3267 50  0000 C CNN
+F 1 "USB3_A" H 9707 3176 50  0000 C CNN
+F 2 "Connector_USB:USB3_A_Molex_48393-001" H 9800 2650 50  0001 C CNN
+F 3 "~" H 9800 2650 50  0001 C CNN
+	1    9650 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB3_A J8
+U 1 1 616E6C04
+P 9650 4300
+F 0 "J8" H 9707 5017 50  0000 C CNN
+F 1 "USB3_A" H 9707 4926 50  0000 C CNN
+F 2 "Connector_USB:USB3_A_Molex_48393-001" H 9800 4400 50  0001 C CNN
+F 3 "~" H 9800 4400 50  0001 C CNN
+	1    9650 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L New_Library:HD3SS3220 U3
+U 1 1 61711409
+P 7500 4600
+F 0 "U3" H 7500 5615 50  0000 C CNN
+F 1 "HD3SS3220" H 7500 5524 50  0000 C CNN
+F 2 "fishsense2:TI_VQFN_RNH" H 7500 5550 50  0001 C CNN
+F 3 "" H 7500 5550 50  0001 C CNN
+	1    7500 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L New_Library:TUSB8020BIPHP U2
+U 1 1 61718548
+P 4000 3900
+F 0 "U2" H 4000 5888 60  0000 C CNN
+F 1 "TUSB8020BIPHP" H 4000 5782 60  0000 C CNN
+F 2 "fishsense2:TUSB8020BIPHP" H 4000 4140 60  0001 C CNN
+F 3 "" H 3800 5700 60  0000 C CNN
+	1    4000 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_C_Receptacle J6
+U 1 1 6172C2EF
+P 1100 4900
+F 0 "J6" H 1207 6167 50  0000 C CNN
+F 1 "USB_C_Receptacle" H 1207 6076 50  0000 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_GCT_USB4085" H 1250 4900 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1250 4900 50  0001 C CNN
+	1    1100 4900
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
