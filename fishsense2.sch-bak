@@ -195,38 +195,6 @@ TX2_P
 Text Label 13300 4100 0    50   ~ 0
 TX2_N
 Wire Wire Line
-	3900 5450 3550 5450
-Wire Wire Line
-	3900 5350 3550 5350
-Wire Wire Line
-	3000 5300 2650 5300
-Wire Wire Line
-	3000 5700 2650 5700
-Wire Wire Line
-	3900 5850 3550 5850
-Wire Wire Line
-	3900 5950 3550 5950
-Wire Wire Line
-	3000 6100 2650 6100
-Wire Wire Line
-	3050 6500 2700 6500
-Text Label 3550 5450 0    50   ~ 0
-RX1_P
-Text Label 3550 5350 0    50   ~ 0
-RX1_N
-Text Label 3550 5950 0    50   ~ 0
-RX2_P
-Text Label 3550 5850 0    50   ~ 0
-RX2_N
-Text Label 2650 5700 0    50   ~ 0
-TX1_P
-Text Label 2650 5300 0    50   ~ 0
-TX1_N
-Text Label 2700 6500 0    50   ~ 0
-TX2_P
-Text Label 2650 6100 0    50   ~ 0
-TX2_N
-Wire Wire Line
 	14550 4800 14550 4850
 Wire Wire Line
 	14550 4850 14250 4850
@@ -270,56 +238,6 @@ F 3 "" H 5550 5300 50  0001 C CNN
 	1    5550 5300
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C12
-U 1 1 61B3614F
-P 3150 5700
-F 0 "C12" V 2898 5700 50  0000 C CNN
-F 1 "100n" V 2989 5700 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 3188 5550 50  0001 C CNN
-F 3 "~" H 3150 5700 50  0001 C CNN
-	1    3150 5700
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:C C13
-U 1 1 61B36D66
-P 3150 5300
-F 0 "C13" V 2898 5300 50  0000 C CNN
-F 1 "100n" V 2989 5300 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 3188 5150 50  0001 C CNN
-F 3 "~" H 3150 5300 50  0001 C CNN
-	1    3150 5300
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:C C14
-U 1 1 61B37ACA
-P 3200 6500
-F 0 "C14" V 2948 6500 50  0000 C CNN
-F 1 "100n" V 3039 6500 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 3238 6350 50  0001 C CNN
-F 3 "~" H 3200 6500 50  0001 C CNN
-	1    3200 6500
-	0    1    -1   0   
-$EndComp
-$Comp
-L Device:C C15
-U 1 1 61B422ED
-P 3150 6100
-F 0 "C15" V 2898 6100 50  0000 C CNN
-F 1 "100n" V 2989 6100 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 3188 5950 50  0001 C CNN
-F 3 "~" H 3150 6100 50  0001 C CNN
-	1    3150 6100
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	3900 5700 3300 5700
-Wire Wire Line
-	3900 5600 3300 5600
-Wire Wire Line
-	3400 6200 3900 6200
 Wire Wire Line
 	13650 2200 13350 2200
 Text Label 13350 2200 0    50   ~ 0
@@ -446,22 +364,6 @@ F 3 "" H 3800 3400 50  0001 C CNN
 	1    3800 3400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5100 5950 5550 5950
-Wire Wire Line
-	5100 5850 5550 5850
-Wire Wire Line
-	5100 6100 5550 6100
-Wire Wire Line
-	5100 6200 5550 6200
-Text Label 5550 5950 2    50   ~ 0
-TX_P
-Text Label 5550 5850 2    50   ~ 0
-TX_N
-Text Label 5550 6100 2    50   ~ 0
-RX_P
-Text Label 5550 6200 2    50   ~ 0
-RX_N
 Wire Wire Line
 	8000 7150 8450 7150
 Wire Wire Line
@@ -1610,14 +1512,6 @@ Wire Wire Line
 	13150 7250 13250 7250
 Wire Wire Line
 	13250 7250 13250 6850
-Text Label 3400 5700 0    50   ~ 0
-TX1_F_P
-Text Label 3400 5600 0    50   ~ 0
-TX1_F_N
-Text Label 3400 6200 0    50   ~ 0
-TX2_F_P
-Text Label 3400 6100 0    50   ~ 0
-TX2_F_N
 Wire Wire Line
 	13150 6750 13750 6750
 Wire Wire Line
@@ -1670,14 +1564,122 @@ Text Label 13250 8900 0    50   ~ 0
 TX_DN2_F_N
 Text Label 13250 9000 0    50   ~ 0
 TX_DN2_F_P
+Text Label 3400 6200 0    50   ~ 0
+TX2_F_N
+Text Label 3400 6100 0    50   ~ 0
+TX2_F_P
 Wire Wire Line
-	3400 6200 3400 6500
+	3400 6600 3300 6600
 Wire Wire Line
-	3400 6500 3350 6500
+	3400 6200 3400 6600
 Wire Wire Line
-	3300 5300 3300 5600
+	3900 6200 3400 6200
 Wire Wire Line
 	3300 6100 3900 6100
-Text Notes 3650 6450 0    50   ~ 0
-Note: Polarities are swapped in this mux for easier routing
+Wire Wire Line
+	3300 6100 3300 6200
+$Comp
+L Device:C C15
+U 1 1 61B422ED
+P 3150 6600
+F 0 "C15" V 2898 6600 50  0000 C CNN
+F 1 "100n" V 2989 6600 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3188 6450 50  0001 C CNN
+F 3 "~" H 3150 6600 50  0001 C CNN
+	1    3150 6600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C14
+U 1 1 61B37ACA
+P 3150 6200
+F 0 "C14" V 2898 6200 50  0000 C CNN
+F 1 "100n" V 2989 6200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3188 6050 50  0001 C CNN
+F 3 "~" H 3150 6200 50  0001 C CNN
+	1    3150 6200
+	0    1    1    0   
+$EndComp
+Text Label 2650 6600 0    50   ~ 0
+TX2_N
+Text Label 2650 6200 0    50   ~ 0
+TX2_P
+Wire Wire Line
+	3000 6200 2650 6200
+Wire Wire Line
+	3000 6600 2650 6600
+Text Label 3400 5700 0    50   ~ 0
+TX1_F_N
+Text Label 3400 5600 0    50   ~ 0
+TX1_F_P
+Wire Wire Line
+	3300 5700 3300 5800
+Wire Wire Line
+	3900 5700 3300 5700
+Wire Wire Line
+	3300 5600 3300 5400
+Wire Wire Line
+	3900 5600 3300 5600
+$Comp
+L Device:C C13
+U 1 1 61B36D66
+P 3150 5800
+F 0 "C13" V 2898 5800 50  0000 C CNN
+F 1 "100n" V 2989 5800 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3188 5650 50  0001 C CNN
+F 3 "~" H 3150 5800 50  0001 C CNN
+	1    3150 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C12
+U 1 1 61B3614F
+P 3150 5400
+F 0 "C12" V 2898 5400 50  0000 C CNN
+F 1 "100n" V 2989 5400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3188 5250 50  0001 C CNN
+F 3 "~" H 3150 5400 50  0001 C CNN
+	1    3150 5400
+	0    1    1    0   
+$EndComp
+Text Label 2650 5800 0    50   ~ 0
+TX1_N
+Text Label 2650 5400 0    50   ~ 0
+TX1_P
+Wire Wire Line
+	3000 5400 2650 5400
+Wire Wire Line
+	3000 5800 2650 5800
+Text Label 3550 5450 0    50   ~ 0
+RX1_N
+Wire Wire Line
+	3900 5450 3550 5450
+Text Label 3550 5350 0    50   ~ 0
+RX1_P
+Wire Wire Line
+	3900 5350 3550 5350
+Text Label 3550 5950 0    50   ~ 0
+RX2_N
+Wire Wire Line
+	3900 5950 3550 5950
+Text Label 3550 5850 0    50   ~ 0
+RX2_P
+Wire Wire Line
+	3900 5850 3550 5850
+Text Label 5550 5950 2    50   ~ 0
+TX_N
+Wire Wire Line
+	5100 5950 5550 5950
+Text Label 5550 5850 2    50   ~ 0
+TX_P
+Wire Wire Line
+	5100 5850 5550 5850
+Text Label 5550 6100 2    50   ~ 0
+RX_P
+Wire Wire Line
+	5100 6100 5550 6100
+Text Label 5550 6200 2    50   ~ 0
+RX_N
+Wire Wire Line
+	5100 6200 5550 6200
 $EndSCHEMATC

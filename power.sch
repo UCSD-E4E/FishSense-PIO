@@ -515,10 +515,7 @@ $EndComp
 Text Label 3500 6050 2    50   ~ 0
 RELAY-
 Wire Wire Line
-	2000 5250 1200 5250
-Wire Wire Line
 	1200 5250 1200 5450
-Connection ~ 2000 5250
 $Comp
 L Device:R_US R10
 U 1 1 619684CD
@@ -555,7 +552,6 @@ Text GLabel 2150 6550 0    50   Input ~ 0
 RELAY_CTL
 Wire Wire Line
 	1200 5250 1050 5250
-Connection ~ 1200 5250
 Wire Notes Line width 20
 	550  4000 3200 4000
 Wire Notes Line width 20
@@ -1223,4 +1219,21 @@ F 3 "https://standexelectronics.com/de/produkte/ums-reed-relais/" H 2200 2300 50
 	0    -1   -1   0   
 $EndComp
 NoConn ~ 8400 1050
+$Comp
+L Device:R_US R?
+U 1 1 618DE97F
+P 1550 5250
+F 0 "R?" V 1345 5250 50  0000 C CNN
+F 1 "39k" V 1436 5250 50  0000 C CNN
+F 2 "" V 1590 5240 50  0001 C CNN
+F 3 "~" H 1550 5250 50  0001 C CNN
+	1    1550 5250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1200 5250 1400 5250
+Connection ~ 1200 5250
+Wire Wire Line
+	1700 5250 2000 5250
+Connection ~ 2000 5250
 $EndSCHEMATC
