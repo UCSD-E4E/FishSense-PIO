@@ -114,7 +114,7 @@ U 1 1 618E6135
 P 2000 5050
 F 0 "SW2" V 2046 4965 50  0000 R CNN
 F 1 "SW_Reed" V 1955 4965 50  0000 R CNN
-F 2 "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal" H 2000 5050 50  0001 C CNN
+F 2 "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal" H 2000 5050 50  0001 C CNN
 F 3 "~" H 2000 5050 50  0001 C CNN
 	1    2000 5050
 	0    -1   -1   0   
@@ -266,7 +266,7 @@ Wire Notes Line width 20
 Wire Notes Line width 20
 	550  7700 5400 7700
 Wire Notes Line width 20
-	5400 7700 5400 4150
+	6850 7700 6850 4150
 Wire Notes Line width 20
 	5400 4150 550  4150
 Text Notes 4150 4500 0    118  ~ 0

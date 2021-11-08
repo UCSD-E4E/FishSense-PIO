@@ -266,7 +266,7 @@ Wire Notes Line width 20
 Wire Notes Line width 20
 	550  7700 5400 7700
 Wire Notes Line width 20
-	5400 7700 5400 4150
+	6850 7700 6850 4150
 Wire Notes Line width 20
 	5400 4150 550  4150
 Text Notes 4150 4500 0    118  ~ 0
@@ -701,4 +701,101 @@ F 3 "" H 9450 2050 50  0001 C CNN
 	1    9450 2050
 	1    0    0    -1  
 $EndComp
+$Comp
+L New_Library:TPS3711 U?
+U 1 1 618E2051
+P 5700 6200
+F 0 "U?" H 5700 6860 118 0000 C CNN
+F 1 "TPS3711" H 5700 6696 79  0000 C CNN
+F 2 "" H 5700 6700 118 0001 C CNN
+F 3 "" H 5700 6700 118 0001 C CNN
+	1    5700 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 618E412F
+P 6400 6550
+F 0 "#PWR?" H 6400 6300 50  0001 C CNN
+F 1 "GND" H 6405 6377 50  0000 C CNN
+F 2 "" H 6400 6550 50  0001 C CNN
+F 3 "" H 6400 6550 50  0001 C CNN
+	1    6400 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 6050 6400 6050
+Wire Wire Line
+	6400 6050 6400 6200
+Wire Wire Line
+	6150 6200 6400 6200
+Connection ~ 6400 6200
+Wire Wire Line
+	6400 6200 6400 6550
+Wire Wire Line
+	5250 6200 5100 6200
+Wire Wire Line
+	5100 6200 5100 6450
+$Comp
+L power:GND #PWR?
+U 1 1 618EA162
+P 5100 6550
+F 0 "#PWR?" H 5100 6300 50  0001 C CNN
+F 1 "GND" H 5105 6377 50  0000 C CNN
+F 2 "" H 5100 6550 50  0001 C CNN
+F 3 "" H 5100 6550 50  0001 C CNN
+	1    5100 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 5900 6400 5900
+Wire Wire Line
+	6400 5900 6400 5600
+Text GLabel 6400 5600 1    50   Input ~ 0
+RELAY_CTL
+Wire Wire Line
+	5250 5900 5050 5900
+Wire Wire Line
+	5050 5900 5050 5650
+Wire Wire Line
+	5250 6050 4850 6050
+$Comp
+L Device:R_US R?
+U 1 1 618F8E38
+P 4850 5900
+F 0 "R?" H 4918 5946 50  0000 L CNN
+F 1 "R_US" H 4918 5855 50  0000 L CNN
+F 2 "" V 4890 5890 50  0001 C CNN
+F 3 "~" H 4850 5900 50  0001 C CNN
+	1    4850 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 618F9768
+P 4850 6200
+F 0 "R?" H 4918 6246 50  0000 L CNN
+F 1 "R_US" H 4918 6155 50  0000 L CNN
+F 2 "" V 4890 6190 50  0001 C CNN
+F 3 "~" H 4850 6200 50  0001 C CNN
+	1    4850 6200
+	1    0    0    -1  
+$EndComp
+Connection ~ 4850 6050
+Wire Wire Line
+	4850 6350 4850 6450
+Wire Wire Line
+	4850 6450 5100 6450
+Connection ~ 5100 6450
+Wire Wire Line
+	5100 6450 5100 6550
+Wire Wire Line
+	4850 5750 4850 5650
+Wire Wire Line
+	4850 5650 5050 5650
+Wire Wire Line
+	4850 5650 4450 5650
+Connection ~ 4850 5650
+Text Label 4450 5650 0    50   ~ 0
+BATT_SWITCHED
 $EndSCHEMATC
