@@ -114,7 +114,7 @@ U 1 1 618E6135
 P 2000 5050
 F 0 "SW2" V 2046 4965 50  0000 R CNN
 F 1 "SW_Reed" V 1955 4965 50  0000 R CNN
-F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 2000 5050 50  0001 C CNN
+F 2 "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal" H 2000 5050 50  0001 C CNN
 F 3 "~" H 2000 5050 50  0001 C CNN
 	1    2000 5050
 	0    -1   -1   0   
@@ -643,7 +643,7 @@ AR Path="/6178C357" Ref="J?"  Part="1"
 AR Path="/6173F919/6178C357" Ref="J3"  Part="1" 
 F 0 "J3" H 1180 2242 50  0000 L CNN
 F 1 "BATT_IN" H 1180 2151 50  0000 L CNN
-F 2 "Connector_AMASS:AMASS_XT30U-F_1x02_P5.0mm_Vertical" H 1100 2250 50  0001 C CNN
+F 2 "Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal" H 1100 2250 50  0001 C CNN
 F 3 "~" H 1100 2250 50  0001 C CNN
 	1    1100 2250
 	-1   0    0    1   
@@ -673,13 +673,13 @@ Connection ~ 9150 1600
 $Comp
 L Connector:Screw_Terminal_01x02 J11
 U 1 1 619B0715
-P 9700 1750
-F 0 "J11" H 9780 1742 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" H 9780 1651 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9700 1750 50  0001 C CNN
-F 3 "~" H 9700 1750 50  0001 C CNN
-	1    9700 1750
-	1    0    0    -1  
+P 9700 1850
+F 0 "J11" H 9780 1842 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 9780 1751 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 9700 1850 50  0001 C CNN
+F 3 "~" H 9700 1850 50  0001 C CNN
+	1    9700 1850
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	9500 1750 9150 1750
