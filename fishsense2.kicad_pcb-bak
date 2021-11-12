@@ -2171,7 +2171,7 @@
   (gr_text PWR (at 173.355 113.03) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_text "Battery In" (at 146.05 113.03) (layer F.SilkS)
+  (gr_text "Battery In" (at 164.465 113.03) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text "15v Out" (at 175.895 120.65) (layer F.SilkS)
