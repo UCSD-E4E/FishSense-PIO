@@ -1,4 +1,4 @@
-18707796213944408
+18709432985303408
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -81765,6 +81765,13 @@ Varistor, diameter 21.5mm, width 11.4mm, pitch 10mm
 varistor SIOV
 0
 2
+2
+fishsense2
+5mm_Fuse_Clips
+
+
+0
+4
 2
 fishsense2
 TI_VQFN_RNH
