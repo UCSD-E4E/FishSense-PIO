@@ -14,23 +14,12 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:LED D1
-U 1 1 6166E725
-P 1350 3550
-F 0 "D1" H 1343 3767 50  0000 C CNN
-F 1 "LED" H 1343 3676 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm_FlatTop" H 1350 3550 50  0001 C CNN
-F 3 "~" H 1350 3550 50  0001 C CNN
-	1    1350 3550
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Connector_Generic:Conn_02x10_Odd_Even J1
 U 1 1 6167643D
 P 2800 4100
 F 0 "J1" H 2850 4717 50  0000 C CNN
-F 1 "Conn_02x10_Odd_Even" H 2850 4626 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Vertical" H 2800 4100 50  0001 C CNN
+F 1 "ORBITTY_EXPANSION" H 2850 4626 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x10_P2.54mm_Vertical" H 2800 4100 50  0001 C CNN
 F 3 "~" H 2800 4100 50  0001 C CNN
 	1    2800 4100
 	1    0    0    -1  
@@ -166,38 +155,17 @@ NoConn ~ 2600 4200
 NoConn ~ 2600 4300
 NoConn ~ 2600 4400
 NoConn ~ 2600 4500
-Text GLabel 2600 4100 0    50   Input ~ 0
-REED
-Text GLabel 3100 4100 2    50   Input ~ 0
-RELAY_CTL
-$Comp
-L Switch:SW_Reed SW1
-U 1 1 622296A5
-P 3850 4350
-F 0 "SW1" V 3896 4265 50  0000 R CNN
-F 1 "SW_Reed" V 3805 4265 50  0000 R CNN
-F 2 "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal" H 3850 4350 50  0001 C CNN
-F 3 "~" H 3850 4350 50  0001 C CNN
-	1    3850 4350
-	0    1    -1   0   
-$EndComp
 $Comp
 L power:GND #PWR0128
 U 1 1 6222A48E
-P 3850 4550
-F 0 "#PWR0128" H 3850 4300 50  0001 C CNN
-F 1 "GND" H 3855 4377 50  0000 C CNN
-F 2 "" H 3850 4550 50  0001 C CNN
-F 3 "" H 3850 4550 50  0001 C CNN
-	1    3850 4550
+P 3450 4250
+F 0 "#PWR0128" H 3450 4000 50  0001 C CNN
+F 1 "GND" H 3455 4077 50  0000 C CNN
+F 2 "" H 3450 4250 50  0001 C CNN
+F 3 "" H 3450 4250 50  0001 C CNN
+	1    3450 4250
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	3100 4000 3850 4000
-Wire Wire Line
-	3850 4000 3850 4150
-Wire Wire Line
-	2600 4000 1650 4000
 $Comp
 L power:GND #PWR0129
 U 1 1 6228109C
@@ -209,45 +177,12 @@ F 3 "" H 1350 4200 50  0001 C CNN
 	1    1350 4200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1350 3700 1350 3800
-$Comp
-L Device:R_US R9
-U 1 1 61772274
-P 1350 3250
-F 0 "R9" H 1418 3296 50  0000 L CNN
-F 1 "220" H 1418 3205 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 1390 3240 50  0001 C CNN
-F 3 "~" H 1350 3250 50  0001 C CNN
-	1    1350 3250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3100 3700 3400 3700
-Wire Wire Line
-	3400 3700 3400 3050
-Wire Wire Line
-	3400 3050 1350 3050
-Wire Wire Line
-	1350 3050 1350 3100
 Wire Notes Line width 20
 	700  1950 700  7150
 Wire Notes Line width 20
-	700  7150 3600 7150
-Wire Notes Line width 20
-	3600 7150 3600 1950
-Wire Notes Line width 20
-	3600 1950 700  1950
+	4450 7150 4450 1950
 Text Notes 850  2250 0    118  ~ 0
 Orbitty Connector
-Wire Notes Line width 20
-	4650 1900 4650 9950
-Wire Notes Line width 20
-	4650 9950 11250 9950
-Wire Notes Line width 20
-	11250 9950 11250 1900
-Wire Notes Line width 20
-	11250 1900 4650 1900
 $Comp
 L Device:Q_NMOS_GSD Q1
 U 1 1 619E7610
@@ -259,4 +194,122 @@ F 3 "~" H 1450 4000 50  0001 C CNN
 	1    1450 4000
 	-1   0    0    -1  
 $EndComp
+Wire Notes Line width 20
+	700  7150 4450 7150
+Wire Notes Line width 20
+	700  1950 4450 1950
+NoConn ~ 3100 4100
+NoConn ~ 3100 3700
+$Comp
+L Device:LED D1
+U 1 1 61C3EDE1
+P 1350 3400
+F 0 "D1" V 1389 3282 50  0000 R CNN
+F 1 "RECORD_LED" V 1298 3282 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm_FlatTop" H 1350 3400 50  0001 C CNN
+F 3 "~" H 1350 3400 50  0001 C CNN
+	1    1350 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R7
+U 1 1 61C3EDE8
+P 1350 3100
+F 0 "R7" H 1418 3146 50  0000 L CNN
+F 1 "150" H 1418 3055 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 1390 3090 50  0001 C CNN
+F 3 "~" H 1350 3100 50  0001 C CNN
+	1    1350 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 2900 1350 2950
+Wire Wire Line
+	1350 3550 1350 3800
+$Comp
+L power:+5V #PWR0106
+U 1 1 61C3F82C
+P 1350 2900
+F 0 "#PWR0106" H 1350 2750 50  0001 C CNN
+F 1 "+5V" H 1365 3073 50  0000 C CNN
+F 2 "" H 1350 2900 50  0001 C CNN
+F 3 "" H 1350 2900 50  0001 C CNN
+	1    1350 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R8
+U 1 1 61C42B26
+P 1800 4000
+F 0 "R8" V 1595 4000 50  0000 C CNN
+F 1 "150" V 1686 4000 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 1840 3990 50  0001 C CNN
+F 3 "~" H 1800 4000 50  0001 C CNN
+	1    1800 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 61D8FB28
+P 1650 4900
+F 0 "#PWR0101" H 1650 4650 50  0001 C CNN
+F 1 "GND" H 1655 4727 50  0000 C CNN
+F 2 "" H 1650 4900 50  0001 C CNN
+F 3 "" H 1650 4900 50  0001 C CNN
+	1    1650 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 4250 3450 4100
+Wire Wire Line
+	3450 4100 3550 4100
+$Comp
+L Connector:TestPoint TP2
+U 1 1 61D8F5DF
+P 1650 4900
+F 0 "TP2" H 1708 5018 50  0000 L CNN
+F 1 "GND" H 1708 4927 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Plated_Hole_D2.0mm" H 1850 4900 50  0001 C CNN
+F 3 "~" H 1850 4900 50  0001 C CNN
+	1    1650 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 61D91AFB
+P 3750 4000
+F 0 "J2" H 3830 3992 50  0000 L CNN
+F 1 "REED_SW" H 3830 3901 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_S2B-XH-A_1x02_P2.50mm_Horizontal" H 3750 4000 50  0001 C CNN
+F 3 "~" H 3750 4000 50  0001 C CNN
+	1    3750 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 4000 3100 4000
+Text Notes 1650 3300 0    50   ~ 0
+20mA LED current, with 2V voltage drop
+Text Notes 12200 10950 0    79   ~ 0
+Fishsense_PIO
+Text Notes 13000 11050 0    50   ~ 0
+12/21/2021
+Text Notes 15500 11050 0    50   ~ 0
+1a
+$Comp
+L Connector:TestPoint TP4
+U 1 1 61F33807
+P 2150 3750
+F 0 "TP4" H 2208 3868 50  0000 L CNN
+F 1 "GPIO" H 2208 3777 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Plated_Hole_D2.0mm" H 2350 3750 50  0001 C CNN
+F 3 "~" H 2350 3750 50  0001 C CNN
+	1    2150 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 4000 2600 4000
+Wire Wire Line
+	2150 3750 2150 4100
+Wire Wire Line
+	2150 4100 2600 4100
 $EndSCHEMATC

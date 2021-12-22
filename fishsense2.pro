@@ -1,4 +1,4 @@
-update=Tue 07 Dec 2021 10:16:50 PM PST
+update=Tue 21 Dec 2021 05:27:43 PM PST
 version=1
 last_client=kicad
 [general]
@@ -18,9 +18,9 @@ PageLayoutDescrFile=
 PlotDirectoryName=/home/donovan/Documents/FishsensePCB Datasheets/
 SubpartIdSeparator=0
 SubpartFirstId=65
-NetFmtName=
+NetFmtName=Pcbnew
 SpiceAjustPassiveValues=0
-LabSize=118
+LabSize=50
 ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
@@ -42,8 +42,9 @@ TrackWidth1=0.5
 TrackWidth2=0.2
 TrackWidth3=0.4
 TrackWidth4=1.5
-TrackWidth5=5
-TrackWidth6=7
+TrackWidth5=2
+TrackWidth6=5
+TrackWidth7=7
 ViaDiameter1=0.8
 ViaDrill1=0.4
 dPairWidth1=0.2
