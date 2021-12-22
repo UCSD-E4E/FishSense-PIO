@@ -216,7 +216,7 @@ L Device:R_US R7
 U 1 1 61C3EDE8
 P 1350 3100
 F 0 "R7" H 1418 3146 50  0000 L CNN
-F 1 "130" H 1418 3055 50  0000 L CNN
+F 1 "150" H 1418 3055 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 1390 3090 50  0001 C CNN
 F 3 "~" H 1350 3100 50  0001 C CNN
 	1    1350 3100
@@ -242,7 +242,7 @@ L Device:R_US R8
 U 1 1 61C42B26
 P 1800 4000
 F 0 "R8" V 1595 4000 50  0000 C CNN
-F 1 "130" V 1686 4000 50  0000 C CNN
+F 1 "150" V 1686 4000 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 1840 3990 50  0001 C CNN
 F 3 "~" H 1800 4000 50  0001 C CNN
 	1    1800 4000
@@ -288,7 +288,7 @@ $EndComp
 Wire Wire Line
 	3550 4000 3100 4000
 Text Notes 1650 3300 0    50   ~ 0
-18mA LED current, with 2.65V voltage drop
+20mA LED current, with 2V voltage drop
 Text Notes 12200 10950 0    79   ~ 0
 Fishsense_PIO
 Text Notes 13000 11050 0    50   ~ 0

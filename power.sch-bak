@@ -268,7 +268,7 @@ L Device:R_US R1
 U 1 1 61B841FF
 P 9200 1700
 F 0 "R1" H 9268 1746 50  0000 L CNN
-F 1 "130" H 9268 1655 50  0000 L CNN
+F 1 "90" H 9268 1655 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 9240 1690 50  0001 C CNN
 F 3 "~" H 9200 1700 50  0001 C CNN
 	1    9200 1700
@@ -720,7 +720,7 @@ Wire Wire Line
 Wire Wire Line
 	1700 1750 1700 1350
 Text Notes 9250 1950 0    50   ~ 0
-18mA LED current, with 2.65V voltage drop
+20mA LED current, with 3.2V voltage drop
 Wire Notes Line
 	750  600  750  3550
 Wire Notes Line
