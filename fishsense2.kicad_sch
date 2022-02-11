@@ -1373,12 +1373,6 @@
     (path "/00000000-0000-0000-0000-00006173f919/00000000-0000-0000-0000-000061b841ff"
       (reference "R1") (unit 1) (value "91") (footprint "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder")
     )
-    (path "/00000000-0000-0000-0000-00006173f919/00000000-0000-0000-0000-000061b4bea5"
-      (reference "R2") (unit 1) (value "50k") (footprint "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder")
-    )
-    (path "/00000000-0000-0000-0000-00006173f919/00000000-0000-0000-0000-000061bdfb83"
-      (reference "R3") (unit 1) (value "1M") (footprint "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder")
-    )
     (path "/00000000-0000-0000-0000-00006173f919/00000000-0000-0000-0000-000061bcceb5"
       (reference "R4") (unit 1) (value "102k") (footprint "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder")
     )
@@ -1396,6 +1390,9 @@
     )
     (path "/00000000-0000-0000-0000-00006173f919/00000000-0000-0000-0000-000061d51381"
       (reference "R10") (unit 1) (value "500k") (footprint "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder")
+    )
+    (path "/00000000-0000-0000-0000-00006173f919/f88667e0-8c7a-470f-be0d-ea87277bf27a"
+      (reference "R?") (unit 1) (value "50k") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00006173f919/00000000-0000-0000-0000-000061d09b5b"
       (reference "RV1") (unit 1) (value "1M") (footprint "Potentiometer_SMD:Potentiometer_Bourns_3269W_Vertical")
