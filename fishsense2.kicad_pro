@@ -48,7 +48,13 @@
           "min_clearance": 0.508
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
@@ -115,14 +121,18 @@
       },
       "track_widths": [
         0.0,
-        0.2,
         0.4,
         1.5,
         2.0,
         5.0,
         7.0
       ],
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
     },
@@ -366,7 +376,7 @@
       },
       {
         "bus_width": 12.0,
-        "clearance": 0.4,
+        "clearance": 0.35,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -378,7 +388,6 @@
           "+12V",
           "+5V",
           "/Power/Vext",
-          "Net-(F1-Pad2)",
           "Net-(J3-Pad2)"
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
