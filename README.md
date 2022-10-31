@@ -1,0 +1,9 @@
+- Purpose of board is to limit inrush current to orbitty 
+- trace cut between gate of Q3 NMOS and bottom of R11
+- 50k connected to bottom of gate of Q3
+- connect bottom of 1 uF(>= 100 nF should suffice) cap to ground of RV1
+- Wire from bottom of R11 to bottom of 50k at gate of Q3
+- Additional wire from bottom of Q3 50k to top of cop
+- Check that 50k resistance exists between gate of Q2 and drain of Q3
+- Do not include RV1, R9, R10
+- Voltage threshold across R4 should be 9.5-10V upon start
